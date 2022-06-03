@@ -6,3 +6,83 @@ Green: #00B172
 White: #FFF
 
 */
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "photoArea"
+                        "whatsOnArea"
+                        "sampleArea";
+                            
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#headerSection {
+    position: fixed;
+    width: 100%;
+    background-color:white;
+    height: 50px; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerSection .logo img{
+    width: 250px;  
+}
+
+#headerSection .nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+#headerSection .nav li{
+    font-size: 2em;
+    margin: 0 18px;
+}
+
+#photoSection {
+    width: 100%;
+    height: 1500px;
+    grid-area: photoArea;
+    background-image: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#photoSection article h3 {
+    font-size: 10em;
+    color: white;
+ }
+
+#photoSection p {
+    font-size: 4.5em;
+    color: white;
+    max-width: 1200px;
+}
+
+#whatsOnSection {
+ grid-area: whatsOnArea;
+ height: 750px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+#sampleSection {
+
+}
+
+
+
+
+
+
