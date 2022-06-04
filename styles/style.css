@@ -9,6 +9,8 @@ White: #FFF
 .container{
     width: 100%;
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:1500px 800px 1000px;
     grid-template-areas: "photoArea"
                         "whatsOnArea"
                         "sampleArea";
@@ -45,7 +47,7 @@ White: #FFF
 
 #photoSection {
     width: 100%;
-    height: 1500px;
+    padding: 50px;
     grid-area: photoArea;
     background-image: url("../images/landing.jpg");
     background-position: center;
@@ -68,21 +70,106 @@ White: #FFF
     max-width: 1200px;
 }
 
-#whatsOnSection {
- grid-area: whatsOnArea;
- height: 750px;
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
+#whatsOnSection{
+    grid-area: whatsOnArea;
+    padding: 50px; 
 }
+
+#whatsOnSection article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#whatsOnSection h3{
+    display: inline-block;
+    font-size: 4.5em;
+    border-bottom:solid 0.1em #00B172;
+}
+
+#whatsOnSection .box-cont{
+    padding: 50px;
+    display: flex; 
+    align-items: baseline;
+    margin-left: 150px;
+
+}
+
+#whatsOnSection .box-cont .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+#whatsOnSection .box-cont .box img{
+    width: 250px;
+}
+
+#whatsOnSection h4{
+    font-size: 4em;
+    margin-bottom: 0.6em;
+    color:#00B172; 
+}
+
+#whatsOnSection .box-cont .box p{
+    font-size: 3em;
+    margin-top: 0;
+}
+
 
 #sampleSection {
-
+    grid-area: sampleArea;
+    padding: 120px 50px;
 }
 
+#sampleSection article{
+    padding: 100px;
+    position: relative;
+    display: flex;
+    background-color:#00B172;
+    justify-content: space-between;
+}
 
+#sampleSection article > img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
 
+#sampleSection article .cont-description{
+    display: flex;
+    flex-direction: column;
+    
+}
 
+#sampleSection article .cont-description h4{
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+}
+
+#sampleSection article .cont-description .title{
+    font-weight: bold;
+    font-size: 4.5em;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 0.1em solid white;
+}
+
+#sampleSection article .cont-description p{
+    font-size: 3em;
+    color: rgb(235, 235, 235);
+    max-width: 350px;
+}
+
+#sampleSection article .cont-img{
+    padding: 130px 90px;
+    
+}
 
 
